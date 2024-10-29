@@ -1,0 +1,103 @@
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6464ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background: #e5e0e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  height: 600px;
+  width: 600px;
+  
+}
+
+/* Todo List styling */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list h2 {
+  text-align: center;
+  color: #f158dd;
+}
+
+/* Todo Item styling */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #81dadf;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.todo-item.completed {
+  background-color: #d1ffd1;
+}
+
+.todo-item p {
+  color: #333;
+  flex-grow: 1;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.todo-item.completed p {
+  color: #888;
+  text-decoration: line-through;
+}
+
+/* Button and input styling */
+.todo-item button {
+  background: #6a63bb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-item button:hover {
+  background-color: #dca9f0;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #311ab3;
+  border-radius: 4px;
+}
+
+.todo-input button {
+  background-color: #533da3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-input button:hover {
+  background-color: #388e3c;
+}
